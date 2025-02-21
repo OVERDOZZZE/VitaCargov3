@@ -32,7 +32,20 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'shop',
     'profile',
+    'cloudinary',
+    'cloudinary_storage',
 ]
+
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'desy8wuw7',
+    'API_KEY': '283625199821518',
+    'API_SECRET': 'hDq2aXMSRzOub5ayq4RSU6H7Tis',
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
