@@ -66,7 +66,16 @@ TEMPLATES = [
 WSGI_APPLICATION = 'VitaCargo.wsgi.application'
 
 
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'defaultdb',
+        'USER':'avnadmin',
+        'PASSWORD':'AVNS_5roggPtEs_1oIVQaNGb',
+        'HOST':'pg-1750cc06-saparbekov113.f.aivencloud.com',
+        'PORT':'23509'
+    }
+}
 
 AUTH_PASSWORD_VALIDATORS = [
     {
