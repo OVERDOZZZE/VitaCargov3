@@ -45,6 +45,11 @@ CLOUDINARY_STORAGE = {
     'API_KEY': '283625199821518',
     'API_SECRET': 'hDq2aXMSRzOub5ayq4RSU6H7Tis',
 }
+cloudinary.config(
+    cloud_name='desy8wuw7',
+    api_key='283625199821518',
+    api_secret='hDq2aXMSRzOub5ayq4RSU6H7Tis'
+)
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 MIDDLEWARE = [
