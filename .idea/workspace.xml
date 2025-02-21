@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="221019ca-c2da-4d03-9afa-04f37fa7a0a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitaCargo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/VitaCargo/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VitaCargo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/VitaCargo/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>

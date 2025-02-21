@@ -17,7 +17,7 @@ EMAIL_HOST_PASSWORD='ijgu vovu bpdw pato'
 EMAIL_IS_ACTIVE=True
 
 
-DEBUG = False
+DEBUG = True
 
 AUTH_USER_MODEL = 'profile.CustomUser'
 
@@ -41,6 +41,7 @@ JAZZMIN_SETTINGS = {
 
     # Logo to use for login form in dark themes (defaults to login_logo)
     "login_logo_dark": None,
+    'theme': 'default',
 
     # CSS classes that are applied to the logo above
     "site_logo_classes": "img-circle",
@@ -161,7 +162,7 @@ JAZZMIN_SETTINGS = {
     # override change forms on a per modeladmin basis
     "changeform_format_overrides": {"auth.user": "collapsible", "auth.group": "vertical_tabs"},
     # Add a language dropdown into the admin
-    "language_chooser": True,
+    "language_chooser": False,
 }
 INSTALLED_APPS = [
     'jazzmin',
@@ -196,7 +197,6 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.locale.LocaleMiddleware',  # Enable locale middleware
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -252,11 +252,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'ru'  # Russian language
-TIME_ZONE = 'Asia/Bishkek'
+LANGUAGE_CODE = 'en-us'
+
+TIME_ZONE = 'UTC'
+
 USE_I18N = True
-USE_L10N = True
+
 USE_TZ = True
+
 
 # STATIC_URL = 'static/'
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
