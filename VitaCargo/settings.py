@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'shop',
     'profile',
     'cloudinary',
-    'cloudinary_storage',
+    # 'cloudinary_storage',
 ]
 
 import cloudinary
