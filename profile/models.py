@@ -34,7 +34,7 @@ class CustomUser(AbstractUser):
     #     null=True,
     #     verbose_name='Фото профиля'
     # )
-    image = models.ImageField(
+    image = CloudinaryField(
         'users/',
         blank=True,
         null=True,
